@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="style.css">
+    <style>
+        @media (max-width: 600px)
+        {
+            .grid-tiles{
+                grid-template-columns: repeat(2, 75px);
+                grid-auto-columns: 75px;
+                grid-auto-rows: 75px;
+                grid-auto-flow:row; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="start-screen">
+        <header class="glav-header">
+            <h1 class="start-title">Start</h1>
+                <span>User</span>
+        </header>
+
+        <main class="tile-container">
+            
+        
+            <section class="tile-group">
+                <div class="grid-tiles">
+                    <div class="tile tile-wide teal">Mail</div>
+                    <div class="tile tile-wide blue">Calendar</div>
+                    
+                    <div class="tile tile-medium orange">People</div>
+                    <div class="tile tile-medium green">Photos</div>
+                    
+                    <div class="tile tile-small purple"></div>
+                    <div class="tile tile-small red"></div>
+                    <div class="tile tile-small blue"></div>
+                    <div class="tile tile-small teal"></div>
+
+                    <div class="tile tile-wide dark-blue">Weather</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
